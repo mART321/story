@@ -1,3 +1,8 @@
+# Wave-2: Story Validators Race
+<img src="https://raw.githubusercontent.com/mART321/story/blob/main/img/1story.png" alt="Grafa banner" style="width: 100%; height: 100%; object-fit: cover;" />
+
+# Task 3: Grafana dashboard
+
 Enable prometheus on story node config.toml
 ~~~
 prometheus = true
