@@ -2,6 +2,15 @@
 <img src="https://github.com/mART321/story/blob/main/img/1story.png" alt="Grafa banner" style="width: 100%; height: 100%; object-fit: cover;" />
 
 # Task 3: Grafana dashboard
+<img src="https://github.com/mART321/story/blob/main/img/10story.png" alt="Grafa banner x" style="width: 100%; height: 100%; object-fit: cover;" />
+
+System Requirements
+```
+- System: Ubuntu 20.04 or newer
+- RAM: 4GB or more
+- CPU: 2 cores or more
+- Storage: 20GB
+```
 
 Enable prometheus on story node config.toml
 ~~~
