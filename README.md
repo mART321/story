@@ -4,6 +4,12 @@
 # Task 3: Grafana dashboard
 <img src="https://github.com/mART321/story/blob/main/img/10story.png" alt="Grafa banner x" style="width: 100%; height: 100%; object-fit: cover;" />
 
+- [Grafana dashboard](#-grafana-dashboard-functionality)
+- [System Requirements](#-system-requirements)
+- [Install Node Exporter](#-install-node-exporter)
+- [Dounload and unpach prometheus](#-dounload-and-unpach-prometheus)
+- [Install Grafana](#-install-grafana)
+
 System Requirements
 ```
 - System: Ubuntu 20.04 or newer
@@ -197,7 +203,11 @@ Configure grafana server
 Open browser and and navigate to http://<your_server_ip>:3000
 >Default admin/admin then change your password
 
-login: admin
-pass: ITRocket123
+login: admin \
+pass: ITRocket123 
 
+<img src="https://itrocket.net/logo.svg" style="width: 100%; fill: white" />
 
+[GITHUB](https://github.com/itrocket-am) \
+[TELEGRAM](https://linktr.ee/itrocket_team) \
+[X](https://twitter.com/itrocket_team) 
