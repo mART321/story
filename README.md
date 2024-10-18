@@ -2,15 +2,46 @@
 <img src="https://github.com/mART321/story/blob/main/img/1story.png" alt="Grafa banner" style="width: 100%; height: 100%; object-fit: cover;" />
 
 # Task 3: Grafana dashboard
-<img src="https://github.com/mART321/story/blob/main/img/10story.png" alt="Grafa banner x" style="width: 100%; height: 100%; object-fit: cover;" />
+<img src="https://github.com/mART321/story/blob/main/img/main.png" alt="Grafa banner x" style="width: 100%; height: 100%; object-fit: cover;" />
 
-- [Grafana dashboard](#-grafana-dashboard-functionality)
-- [System Requirements](#-system-requirements)
-- [Install Node Exporter](#-install-node-exporter)
-- [Dounload and unpach prometheus](#-dounload-and-unpach-prometheus)
-- [Install Grafana](#-install-grafana)
+- [Grafana Dashboard Functionality](#grafana-dashboard-functionality)
+- [System Requirements](#system-requirements)
+- [Install Node Exporter](#install-node-exporter)
+- [Download and Unpack Prometheus](#download-and-unpack-prometheus)
+- [Install Grafana](#install-grafana)
 
-System Requirements
+# Grafana Dashboard Functionality
+  <details>
+    <summary>Validator Data</summary>
+    <img src="https://github.com/mART321/story/blob/main/img/vd.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  </details>
+  
+  <details>
+    <summary>Block parameters</summary>
+    <img src="https://github.com/mART321/story/blob/main/img/bp.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  </details>
+
+  <details>
+    <summary>Transactions & Gas</summary>
+    <img src="https://github.com/mART321/story/blob/main/img/tg.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  </details>
+
+  <details>
+    <summary>Staking</summary>
+    <img src="https://github.com/mART321/story/blob/main/img/s.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  </details>
+
+  <details>
+    <summary>GETH Overview</summary>
+    <img src="https://github.com/mART321/story/blob/main/img/go.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  </details>
+
+  <details>
+    <summary>System Health</summary>
+    <img src="https://github.com/mART321/story/blob/main/img/sh.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  </details>
+
+# System Requirements
 ```
 - System: Ubuntu 20.04 or newer
 - RAM: 4GB or more
@@ -69,7 +100,7 @@ sudo systemctl restart node-exporter && sudo journalctl -u node-exporter -f
 ```
 
 
-### Install Prometheus
+# Install Prometheus
 ```
 sudo useradd --no-create-home --shell /bin/false prometheus
 sudo groupadd --system prometheus
@@ -77,7 +108,7 @@ sudo usermod -aG prometheus prometheus
 ```
 <img src="https://github.com/mART321/story/blob/main/img/5story.png" alt="Grafa banner 4" style="width: 100%; height: 100%; object-fit: cover;" />
 
-Dounload and unpach prometheus
+# Dounload and unpach prometheus
 ```
 cd $HOME
 [ ! -d /etc/prometheus ] && mkdir -p /etc/prometheus
@@ -186,7 +217,7 @@ sudo systemctl enable prometheus
 sudo systemctl restart prometheus && sudo journalctl -u prometheus -f
 ```
 
-### Install Grafana
+# Install Grafana
 ```
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
