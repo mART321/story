@@ -108,7 +108,7 @@ sudo usermod -aG prometheus prometheus
 ```
 <img src="https://github.com/mART321/story/blob/main/img/5story.png" alt="Grafa banner 4" style="width: 100%; height: 100%; object-fit: cover;" />
 
-# Dounload and unpach prometheus
+# Download and Unpack Prometheus
 ```
 cd $HOME
 [ ! -d /etc/prometheus ] && mkdir -p /etc/prometheus
