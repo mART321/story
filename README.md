@@ -237,6 +237,8 @@ Open browser and and navigate to http://<your_server_ip>:3000
 login: admin \
 pass: ITRocket123 
 
+[GO UP](#grafana-dashboard-functionality)
+
 <img src="https://itrocket.net/logo.svg" style="width: 100%; fill: white" />
 
 [GITHUB](https://github.com/itrocket-am) \
