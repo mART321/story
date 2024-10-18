@@ -6,40 +6,48 @@
 
 - [Grafana Dashboard Functionality](#grafana-dashboard-functionality)
 - [System Requirements](#system-requirements)
+- [Installation](#INSTALLATION)
 - [Install Node Exporter](#install-node-exporter)
 - [Download and Unpack Prometheus](#download-and-unpack-prometheus)
 - [Install Grafana](#install-grafana)
 
 # Grafana Dashboard Functionality
-  <details>
-    <summary>Validator Data</summary>
-    <img src="https://github.com/mART321/story/blob/main/img/vd.png" style="width: 100%; height: 100%; object-fit: cover;" />
-  </details>
-  
-  <details>
-    <summary>Block parameters</summary>
-    <img src="https://github.com/mART321/story/blob/main/img/bp.png" style="width: 100%; height: 100%; object-fit: cover;" />
-  </details>
 
-  <details>
-    <summary>Transactions & Gas</summary>
-    <img src="https://github.com/mART321/story/blob/main/img/tg.png" style="width: 100%; height: 100%; object-fit: cover;" />
-  </details>
+<details>
+  <summary>Validator Data</summary>
+  <img src="https://github.com/mART321/story/blob/main/img/vd.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  <p>This block displays validator data, such as uptime, number of blocks, missed blocks, and validator power, helping to track validator performance and reliability.</p>
+</details>
 
-  <details>
-    <summary>Staking</summary>
-    <img src="https://github.com/mART321/story/blob/main/img/s.png" style="width: 100%; height: 100%; object-fit: cover;" />
-  </details>
+<details>
+  <summary>Block parameters</summary>
+  <img src="https://github.com/mART321/story/blob/main/img/bp.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  <p>This block shows block parameters such as block size, intervals between blocks, and processing time. It also provides information on the execution of various ABCI methods.</p>
+</details>
 
-  <details>
-    <summary>GETH Overview</summary>
-    <img src="https://github.com/mART321/story/blob/main/img/go.png" style="width: 100%; height: 100%; object-fit: cover;" />
-  </details>
+<details>
+  <summary>Transactions & Gas</summary>
+  <img src="https://github.com/mART321/story/blob/main/img/tg.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  <p>This block provides statistics on transactions and gas usage, showing the total number of transactions, their success rate, gas fees, and the state of the transaction pool.</p>
+</details>
 
-  <details>
-    <summary>System Health</summary>
-    <img src="https://github.com/mART321/story/blob/main/img/sh.png" style="width: 100%; height: 100%; object-fit: cover;" />
-  </details>
+<details>
+  <summary>Staking</summary>
+  <img src="https://github.com/mART321/story/blob/main/img/s.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  <p>This block displays metrics related to staking, such as minted tokens, delegate and undelegate transactions, and the staking queue status.</p>
+</details>
+
+<details>
+  <summary>GETH Overview</summary>
+  <img src="https://github.com/mART321/story/blob/main/img/go.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  <p>This block contains information about the GETH client version, network traffic, peers, and block processing, helping to monitor node status and network interaction.</p>
+</details>
+
+<details>
+  <summary>System Health</summary>
+  <img src="https://github.com/mART321/story/blob/main/img/sh.png" style="width: 100%; height: 100%; object-fit: cover;" />
+  <p>This block provides system health metrics, including CPU load, memory usage, disk usage, and uptime, helping to monitor system performance and stability.</p>
+</details>
 
 # System Requirements
 ```
@@ -57,7 +65,11 @@ prometheus_listen_addr = ":26660"
 
 Enable geth metric to adding `--metrics --metrics.addr 0.0.0.0 --metrics.port 6060` on geth start command
 
-### Install Node Exporter
+<div style="text-align: center;">
+INSTALLATION
+</div>
+
+# Install Node Exporter
 ```
 cd $HOME
 rm -rf node_exporter-*.*-amd64
