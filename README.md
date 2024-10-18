@@ -6,7 +6,7 @@
 
 - [Grafana Dashboard Functionality](#grafana-dashboard-functionality)
 - [System Requirements](#system-requirements)
-- [Installation](#INSTALLATION)
+- [Installation](#installation)
 - [Install Node Exporter](#install-node-exporter)
 - [Download and Unpack Prometheus](#download-and-unpack-prometheus)
 - [Install Grafana](#install-grafana)
