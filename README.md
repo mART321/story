@@ -65,8 +65,8 @@ prometheus_listen_addr = ":26660"
 
 Enable geth metric to adding `--metrics --metrics.addr 0.0.0.0 --metrics.port 6060` on geth start command
 
-<div style="text-align: center;">
-INSTALLATION
+<div id="installation" style="text-align: center;">
+  INSTALLATION
 </div>
 
 # Install Node Exporter
