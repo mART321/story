@@ -13,6 +13,7 @@
 
 # Grafana Dashboard Functionality
 
+(click ► to view image)
 <details>
   <summary>Validator Data: This block displays validator data, such as uptime, number of blocks, missed blocks, and validator power, helping to track validator performance and reliability.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/vd.png" style="width: 100%; height: 100%; object-fit: cover;" />
@@ -42,6 +43,8 @@
   <summary>System Health: This block provides system health metrics, including CPU load, memory usage, disk usage, and uptime, helping to monitor system performance and stability.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/sh.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
+
+
 
 # System Requirements
 ```
