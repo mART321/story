@@ -5,12 +5,12 @@
 <img src="https://github.com/mART321/story/blob/main/img/main.png" alt="Grafa banner x" style="width: 100%; height: 100%; object-fit: cover;" />
 
 - [Grafana Dashboard Functionality](#grafana-dashboard-functionality)
-- - [Validator Data](#validator-data)
-- - [Block Parameters](#block-parameters)
-- - [Transactions & Gas](#transactions-gas)
-- - [Staking](#staking)
-- - [GETH Overview](#geth-overview)
-- - [System Health](#system-health)
+  - [Validator Data](#validator-data)
+  - [Block Parameters](#block-parameters)
+  - [Transactions & Gas](#transactions-gas)
+  - [Staking](#staking)
+  - [GETH Overview](#geth-overview)
+  - [System Health](#system-health)
 - [System Requirements](#system-requirements)
 - [Installation](#ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤINSTALLATION)
 - [Install Node Exporter](#install-node-exporter)
