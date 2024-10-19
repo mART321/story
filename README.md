@@ -70,7 +70,7 @@ Enable geth metric to adding `--metrics --metrics.addr 0.0.0.0 --metrics.port 60
 # ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤINSTALLATION
 
 # Install Node Exporter
-(It is necessary to install on the validator server.)
+(Recommended to install on the validator server.)
 ```
 cd $HOME
 rm -rf node_exporter-*.*-amd64
@@ -114,7 +114,7 @@ sudo systemctl restart node-exporter && sudo journalctl -u node-exporter -f
 
 
 # Install Prometheus
-(It is recommended to install on a separate server.)
+(Recommended to install on a separate server.)
 ```
 sudo useradd --no-create-home --shell /bin/false prometheus
 sudo groupadd --system prometheus
@@ -232,7 +232,7 @@ sudo systemctl restart prometheus && sudo journalctl -u prometheus -f
 ```
 
 # Install Grafana
-(Recommended to install on the validator server.)
+(Recommended to install on a separate server.)
 ```
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
