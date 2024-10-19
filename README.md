@@ -15,7 +15,7 @@
 
 (click ► to view image)
 <details>
-  <summary>alidator Data: Displays key validator metrics like status, blocks, uptime, and missed blocks for performance tracking.</summary>
+  <summary>Validator Data: This block shows the validator's status, including bond state, blocks produced, missed blocks, uptime, and unbonding time. It provides a quick overview of validator performance and health.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/vd.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
