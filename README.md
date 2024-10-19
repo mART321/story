@@ -5,6 +5,12 @@
 <img src="https://github.com/mART321/story/blob/main/img/main.png" alt="Grafa banner x" style="width: 100%; height: 100%; object-fit: cover;" />
 
 - [Grafana Dashboard Functionality](#grafana-dashboard-functionality)
+- -[Validator Data](#validator-data)
+- -[Block Parameters](#block-parameters)
+- -[Transactions & Gas](#transactions-gas)
+- -[Staking](#staking)
+- -[GETH Overview](#geth-overview)
+- -[System Health](#system-health)
 - [System Requirements](#system-requirements)
 - [Installation](#ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤINSTALLATION)
 - [Install Node Exporter](#install-node-exporter)
@@ -13,38 +19,37 @@
 
 # Grafana Dashboard Functionality
 
-(click ► to view image)
-<details>
+(click ► to open/close image)
+
+<details id="validator-data" open>
   <summary>Validator Data: This block shows the validator's status, including bond state, blocks produced, missed blocks, uptime, and unbonding time. It provides a quick overview of validator performance and health.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/vd.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-<details>
+<details id="block-parameters" open>
   <summary>Block Parameters: This block shows block parameters such as block size, intervals between blocks, and processing time. It also provides information on the execution of various ABCI methods.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/bp.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-<details>
+<details id="transactions-gas" open>
   <summary>Transactions & Gas: This block provides statistics on transactions and gas usage, showing the total number of transactions, their success rate, gas fees, and the state of the transaction pool.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/tg.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-<details>
+<details id="staking" open>
   <summary>Staking: This block displays metrics related to staking, such as minted tokens, delegate and undelegate transactions, and the staking queue status.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/s.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-<details>
+<details id="geth-overview" open>
   <summary>GETH Overview: This block contains information about the GETH client version, network traffic, peers, and block processing, helping to monitor node status and network interaction.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/go.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-<details>
+<details id="system-health" open>
   <summary>System Health: This block provides system health metrics, including CPU load, memory usage, disk usage, and uptime, helping to monitor system performance and stability.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/sh.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
-
-
 
 # System Requirements
 ```
