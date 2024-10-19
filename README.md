@@ -3,8 +3,8 @@
 # Story Grafana Dashboard by ITRocket
 > This dashboard includes blockchain overview, validator data (uptime, missing blocks, etc), block parameters, transactions & gas data, staking parameters, Geth overview, system health monitoring. Custom Prometheus exporter was developed as well to display additional validator metrics. Finally, alerts can be easily configured if needed.
 
-🔗 **Grafana Dashboard:** https://grafana-story.itrocket.net/d/fe12cg1xxqhhca/story-dashboard?orgId=1  
-🔗 **Json data:** link
+✅ **Grafana Dashboard:** https://grafana-story.itrocket.net/d/fe12cg1xxqhhca/story-dashboard?orgId=1  
+✅ **Json data:** link
 
 - [Grafana Dashboard Functionality](#grafana-dashboard-functionality)
   - [Validator Data](#validator-data)
@@ -41,25 +41,25 @@
 
 ### Transactions and Gas 🔄  <a id="transactions-gas"></a>
 <details open>
-  <summary>This block provides statistics on transactions and gas usage, showing the total number of transactions, their success rate, gas fees, and the state of the transaction pool.</summary>
+  <summary>Statistics on transactions and gas usage, including the total number of transactions, their success rate, gas fees, and the state of the transaction pool.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/tg.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-### Staking 🪙 <a id="staking"></a>
+### Staking 💰 <a id="staking"></a>
 <details open>
-  <summary>This block displays metrics related to staking, such as minted tokens, delegate and undelegate transactions, and the staking queue status.</summary>
+  <summary>Metrics related to staking, such as minted tokens, delegate and undelegate transactions, and the staking queue status.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/s.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
 ### Geth Overview 🔍
 <details id="geth-overview" open>
-  <summary>GETH Overview: This block contains information about the GETH client version, network traffic, peers, and block processing, helping to monitor node status and network interaction.</summary>
+  <summary>Information about the GETH client version, network traffic, peers (total, inbonding, and outbonding), and block processing, helping to monitor node status and network interaction.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/go.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
 ### System Health 📉
 <details id="system-health" open>
-  <summary>System Health: This block provides system health metrics, including CPU load, memory usage, disk usage, and uptime, helping to monitor system performance and stability.</summary>
+  <summary>System metrics: CPU load, memory usage, disk usage parameters, and server uptime, helping to monitor system performance and stability.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/sh.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
