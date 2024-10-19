@@ -248,6 +248,7 @@ pass: ITRocket123
 
 <img src="https://itrocket.net/logo.svg" style="width: 100%; fill: white" />
 
+[X](https://twitter.com/itrocket_team)  \
 [GITHUB](https://github.com/itrocket-am) \
-[TELEGRAM](https://linktr.ee/itrocket_team) \
-[X](https://twitter.com/itrocket_team) 
+[TELEGRAM](https://linktr.ee/itrocket_team) 
+
