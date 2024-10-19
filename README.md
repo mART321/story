@@ -1,7 +1,7 @@
 <img src="https://github.com/mART321/story/blob/main/img/1story.png" alt="Grafa banner" style="width: 100%; height: 100%; object-fit: cover;" />
 
 # Story Grafana Dashboard by ITRocket
-> This dashboard includes blockchain overview, validator data, block parameters, transactions & gas data, staking parameters, Geth overview, system health monitoring. Custom Prometheus exporter was developed as well to display additional validator metrics. Finally, alerts can be easily configured if needed.
+> This dashboard includes blockchain overview, validator data (uptime, missing blocks, etc), block parameters, transactions & gas data, staking parameters, Geth overview, system health monitoring. Custom Prometheus exporter was developed as well to display additional validator metrics. Finally, alerts can be easily configured if needed.
 
 🔗 **Grafana Dashboard:** https://grafana-story.itrocket.net/d/fe12cg1xxqhhca/story-dashboard?orgId=1  
 🔗 **Json data:** link
@@ -27,27 +27,27 @@
 
 ###### 💡 Click ► to open/close image  
 
-### Validator Data 👨‍💻  
-<details id="validator-data" open>
-  <summary>This block shows the validator's status, including bond state, blocks produced, missed blocks, uptime, and unbonding time. It provides a quick overview of validator performance and health.</summary>
+### Validator Data 👨‍💻  <a id="validator-data"></a>
+<details open>
+  <summary>A quick overview of validator performance and health: validator's bond and jail status, addresses, unbonding time, as well as missed blocks and uptime, both in real-time and for the last 24 hours and 5 minutes. </summary>
   <img src="https://github.com/mART321/story/blob/main/img/vd.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-### Block parameters ⛓️
-<details id="block-parameters" open>
-  <summary>This block shows block parameters such as block size, intervals between blocks, and processing time. It also provides information on the execution of various ABCI methods.</summary>
+### Block parameters ⛓️  <a id="block-parameters"></a>
+<details open>
+  <summary>Key block parameters like block size, interval times, and block time rate. It also shows the timing metrics for various ABCI methods, including commit, extend_vote, and finalize_block, with mean, last, max, and min values.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/bp.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-### Transactions and Gas 🔄
-<details id="transactions-gas" open>
-  <summary>Transactions & Gas: This block provides statistics on transactions and gas usage, showing the total number of transactions, their success rate, gas fees, and the state of the transaction pool.</summary>
+### Transactions and Gas 🔄  <a id="transactions-gas"></a>
+<details open>
+  <summary>This block provides statistics on transactions and gas usage, showing the total number of transactions, their success rate, gas fees, and the state of the transaction pool.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/tg.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-### Staking 🪙
-<details id="staking" open>
-  <summary>Staking: This block displays metrics related to staking, such as minted tokens, delegate and undelegate transactions, and the staking queue status.</summary>
+### Staking 🪙 <a id="staking"></a>
+<details open>
+  <summary>This block displays metrics related to staking, such as minted tokens, delegate and undelegate transactions, and the staking queue status.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/s.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
