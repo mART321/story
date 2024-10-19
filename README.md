@@ -15,10 +15,10 @@
   - [System Health](#system-health)
 - [Installation Guide](#installation-guide)
   - [System Requirements](#system-requirements)
-  - [Installation](#ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤINSTALLATION)
   - [Install Node Exporter](#install-node-exporter)
-  - [Download and Unpack Prometheus](#download-and-unpack-prometheus)
+  - [Install Prometheus](#install-prometheus)
   - [Install Grafana](#install-grafana)
+  - [Custom Node Exporter](#custom-node-exporter)
 
 <img src="https://github.com/mART321/story/blob/main/img/main.png" alt="Grafa banner x" style="width: 100%; height: 100%; object-fit: cover;" />
 
@@ -51,22 +51,20 @@
   <img src="https://github.com/mART321/story/blob/main/img/s.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-### Geth Overview 🔍
-<details id="geth-overview" open>
+### Geth Overview 🔍  <a id="geth-overview"></a>
+<details open>
   <summary>Information about the GETH client version, network traffic, peers (total, inbonding, and outbonding), and block processing, helping to monitor node status and network interaction.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/go.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-### System Health 📉
-<details id="system-health" open>
+### System Health 📉  <a id="system-health"></a>
+<details open>
   <summary>System metrics: CPU load, memory usage, disk usage parameters, and server uptime, helping to monitor system performance and stability.</summary>
   <img src="https://github.com/mART321/story/blob/main/img/sh.png" style="width: 100%; height: 100%; object-fit: cover;" />
 </details>
 
-# Installation  
-<details id="system-requirements" open>  
-
-### System Requirements ⚙️
+# Installation Guide <a id="installation-guide"></a>
+### System Requirements ⚙️  <a id="system-requirements"></a>
 ```
 - System: Ubuntu 20.04 or newer
 - RAM: 4GB or more
@@ -82,10 +80,9 @@ prometheus_listen_addr = ":26660"
 
 Enable geth metric to adding `--metrics --metrics.addr 0.0.0.0 --metrics.port 6060` on geth start command
 
-### Install Node Exporter ⬇️
-<details id="install-node-exporter" open>  
-❗ Install on the validator node server
-```
+### Install Node Exporter ⬇️   <a id="install-node-exporter"></a>   
+❗ Install on the validator node server   
+~~~
 cd $HOME
 rm -rf node_exporter-*.*-amd64
 curl -s https://api.github.com/repos/prometheus/node_exporter/releases/latest | grep "browser_download_url.*linux-amd64" | cut -d '"' -f 4 | wget -qi -
@@ -94,7 +91,8 @@ cd node_exporter-*.*-amd64
 chmod +x node_exporter
 sudo cp node_exporter /usr/local/bin/
 node_exporter --version
-```
+~~~
+
 <img src="https://github.com/mART321/story/blob/main/img/2story.png" alt="Grafa banner 1" style="width: 100%; height: 100%; object-fit: cover;" />
 
 
@@ -126,8 +124,9 @@ sudo systemctl enable node-exporter
 sudo systemctl restart node-exporter && sudo journalctl -u node-exporter -f
 ```
 
-### Install Prometheus 🛰️
+### Install Prometheus 🛰️   <a id="install-prometheus"></a>
 💡 Recommended to install on a separate server  
+
 Create user  
 ```
 sudo useradd --no-create-home --shell /bin/false prometheus
@@ -245,7 +244,7 @@ sudo systemctl enable prometheus
 sudo systemctl restart prometheus && sudo journalctl -u prometheus -f
 ```
 
-### Install Grafana 🛠️ 
+### Install Grafana 🛠️  <a id="install-grafana"></a>
 💡 Recommended to install on a separate server  
 ```
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
@@ -257,20 +256,9 @@ sudo systemctl status grafana-server
 ```
 <img src="https://github.com/mART321/story/blob/main/img/8story.png" alt="Grafa banner 7" style="width: 100%; height: 100%; object-fit: cover;" />
 
-Enable and start Prometheus
+Open browser and and navigate to `http://<your_server_ip>:3000`
+> Default login and password are admin/admin. After log in, change your password.
 
-Configure grafana server
-Open browser and and navigate to http://<your_server_ip>:3000
->Default admin/admin then change your password
-
-login: admin \
-pass: ITRocket123 
-
-[GO UP](#grafana-dashboard-functionality)
-
-<img src="https://itrocket.net/logo.svg" style="width: 100%; fill: white" />
-
-[X](https://twitter.com/itrocket_team)  \
-[GITHUB](https://github.com/itrocket-am) \
-[TELEGRAM](https://linktr.ee/itrocket_team) 
-
+### Custom Node Exporter 🚀 <a id="custom-node-exporter"></a>  
+Some metrics may be unavailable without custom node exporter. Feel free to use this repo to configure it:  
+🔗 https://github.com/itrocket-team/testnet_guides/tree/main/story/prometheus_exporter
